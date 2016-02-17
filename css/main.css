@@ -4,6 +4,25 @@
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
+@media screen and (max-width: 1200px) {
+    #content{
+        display: none;
+    }
+    #warning{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #content{
+        display: block !important;
+    }
+    #warning{
+        display: none !important;
+    }
+}
+
 h1{
     text-align: center;
 }
@@ -127,4 +146,13 @@ p{
 
 p{
     text-align: center;
+}
+
+#gender-svg{
+    display: block;
+    margin: auto;
+}
+
+#warning{
+    color:  #ff5050;
 }

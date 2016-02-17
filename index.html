@@ -2,8 +2,8 @@
 <html>
 <head>
   <script src="https://d3js.org/d3.v3.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/dimple/2.1.6/dimple.latest.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dimple/2.1.6/dimple.latest.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="./js/d3-graph.js"></script>
   <link rel="stylesheet" href="css/main.css">
   </head>
@@ -20,32 +20,34 @@ A New York Times article quoted from a Crowdpac research that in political contr
     </div>
   </div>
 </div>
-<div id='wrap' class='row'>
-  <div id='total'class='col-6'>
-	   <div id='total-graph'>
-		    <script type="text/javascript">
-  		  d3.csv("./data/oh_clean.csv", draw_total);
-  	     </script>
-     </div>
-  </div>
-  <div id='detail' class='col-6'>
-		<div id='gender'></div>
-		<div id='instructions'>
-      <h3>
-        <img id='arrow' src="./img/arrow.png">
-        Click on a candidate to see his/her donation<br> contribution distribution by donor gender.
-      </h3>
+<div id='warning'><h1> Your Screen size must be wider than 1200 pixels <br>in size to display charts correctly.<br> Please widen your screen and refresh.</h1></div>
+<div id='content'>
+  <div id='wrap' class='row'>
+    <div id='total'class='col-6'>
+  	   <div id='total-graph'>
+  		    <script type="text/javascript">
+    		  d3.csv("./data/oh_clean.csv", draw_total);
+    	     </script>
+       </div>
     </div>
-	</div>
+    <div id='detail' class='col-6'>
+  		<div id='gender'></div>
+  		<div id='instructions'>
+        <h3>
+          <img id='arrow' src="./img/arrow.png">
+          Click on a candidate to see his/her donation<br> contribution distribution by donor gender.
+        </h3>
+      </div>
+  	</div>
+  </div>
+  <div align='right' id='reset'>
+  	<button onclick=instructions() class='reset'>Reset</button>
+  </div>
+  <div class='row'>
+    <p>
+      *data source: Federal Election Comission
+    </p>
+  </div>
 </div>
-<div align='right' id='reset'>
-	<button onclick=instructions() class='reset'>Reset</button>
-</div>
-<div class='row'>
-  <p>
-    *data source: Federal Election Comission
-  </p>
-</div>
-
 </body>
 </html>

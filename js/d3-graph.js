@@ -45,9 +45,8 @@ function draw_gender(data, cand) {
     var subheader = d3.select("#gender")
         .append('p').text("Hover on rings to see candidate comparison to average")
         .attr('id', 'total_subheading');
-    var svg = dimple.newSvg("#gender", 600, 500);
+    var svg = dimple.newSvg("#gender", 500, 500);
     svg.attr('id', 'gender-svg')
-    	.attr('class', 'center');
     svg.append('text').text(cand)
      .attr("text-anchor", "middle")
      .attr("dx", "18.5em")
@@ -60,7 +59,7 @@ function draw_gender(data, cand) {
     var mySeries2 = myChart2.addSeries("contbr_gender", dimple.plot.pie);
     myChart2.assignColor("female", "#FB8072");
     myChart2.assignColor("male", "#80B1D3");
-    myChart2.addLegend(65, 10, 510, 20, "right");
+    myChart2.addLegend(65, 10, '90%', 20, "right");
     mySeries2.innerRadius = "70%"
     // Handle the hover event - overriding the default behaviour
     mySeries2.addEventHandler("mouseover", onHover);

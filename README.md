@@ -1,6 +1,7 @@
 # 2016-presidential-donation-women
 Examine if women donate more to female and liberal candidates with Ohio 2016 Presidential contribution data from FEC
-You can also visit the link to see the chart: https://s3-us-west-2.amazonaws.com/d3-udacity/index.html
+You can also visit the link to see the chart: <a href="https://s3-us-west-2.amazonaws.com/d3-udacity/index.html" target="_blank">https://s3-us-west-2.amazonaws.com/d3-udacity/index.html</a>
+
 ##Summary 
 Do Women Donate More to Women and Liberal candidates?
 Crowdpac research shows that when it comes to political contributions, women give more to liberals and to other women. This visualization takes Ohio state as a case, to examine if women indeed donate more to liberals and to women candidates. Looking at the condaidates that still remain as of February 20th of 2016, and compare their political contributions amount received in dollars, and the donors gender compositions vs overall gender distributions.

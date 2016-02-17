@@ -39,12 +39,11 @@ function instructions(){
 //Draw gender comparison pie and ring chart
 function draw_gender(data, cand) {
     var header= d3.select("#gender")
-        .append('h2').text("Candidate vs. Average")
+        .append('h2').text("Donations Received by Gender: Candidate vs. Average")
         .style('text-align', "center")
         .attr('id', 'gender_heading');
     var subheader = d3.select("#gender")
         .append('p').text("Hover on rings to see candidate comparison to average")
-        .style('text-align', "center")
         .attr('id', 'total_subheading');
     var svg = dimple.newSvg("#gender", 600, 500);
     svg.attr('id', 'gender-svg')
@@ -72,6 +71,7 @@ function draw_gender(data, cand) {
 //Hover event to display label for candidate's contribution by gender
 function onHover(e) { 
     var pct_format = d3.format(".2%");
+    var amt_format = d3.format(".2s");
     var path = e.selectedShape[0][0];
     var pct = e.selectedShape[0][0].__data__.piePct;
     var d3path = d3.select(path);
@@ -115,9 +115,9 @@ function onHover(e) {
     popup
     .append('text')
     .attr('x', x + 15)
-    .attr('y', y + 15)
-    .text(e.seriesValue[0] + ": " + pct_format(pct))
-    .style("font-size", 12)
+    .attr('y', y + 25)
+    .text(e.seriesValue[0] + ": " + pct_format(pct) + ' ($' + amt_format(e.pValue) + ')')
+    .style("font-size", 14)
     .style("font-family", 'Arial')
     .style("text-align", 'middle')
     .style("fill", 'white');
@@ -125,7 +125,7 @@ function onHover(e) {
     popup
     .append('text')
     .attr('x', x + 15)
-    .attr('y', y + 35)
+    .attr('y', y + 45)
     .text(pct_format(Math.abs(compare)) + " " + diff + " than average.")
     .style("font-size", 12)
     .style("font-family", 'Arial')

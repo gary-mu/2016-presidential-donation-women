@@ -1,8 +1,4 @@
 *{
-	border: 1px solid blue !important;
-}
-
-*{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
@@ -124,9 +120,11 @@ p{
     vertical-align:middle;
 }
 
-p{
-    vertical-align: left;
-    text-align: left;
+#summary{
     width: 800px;
+    text-align: left;
+}
 
+p{
+    text-align: center;
 }

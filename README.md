@@ -1,6 +1,6 @@
 # 2016-presidential-donation-women
 Examine if women donate more to female and liberal candidates with Ohio 2016 Presidential contribution data from FEC
-You can also visit the link to see the chart: <a href="https://s3-us-west-2.amazonaws.com/d3-udacity/index.html" target="_blank">https://s3-us-west-2.amazonaws.com/d3-udacity/index.html</a>
+You can also visit the link to see the chart: https://s3-us-west-2.amazonaws.com/d3-udacity/index.html
 
 ##Summary 
 Do Women Donate More to Women and Liberal candidates?

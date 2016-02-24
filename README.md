@@ -21,6 +21,13 @@ With these two feedbacks, I decided to draw a bar chart showing the total contri
 
 Soon my canvas got very crowded, and the third feedback I received was to make them animated: Let user decide who they want to focus on to compare, and placing a pie chart showing overall average inside a donut chart showing the gender distribution per candidate would render faster and easier comparison.
 
+Initial Sketch:
+First Sketch ideas of visualization before coding in D3, with draft layout and draft charts, conveying the main storyline of female donors donate more to female candidates
+https://github.com/gary7135/2016-presidential-donation-women/blob/master/initial%20sketch.jpg
+
+Previous Repo:
+First submit with simple bar chart showing total contirbution by candidates, and on hover the bars, showing a donut chart of each candidate's contirbution by gender, comparing to average.
+https://github.com/gary7135/2016-presidential-donation-women/tree/6891ebaef0e57156bb639d64ead73ac890ec4625
 
 
 ##Resources

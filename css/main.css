@@ -28,6 +28,8 @@ h1{
 }
 h2{
 	color: black;
+    text-align: center;
+
 }
 
 h3{
@@ -155,4 +157,11 @@ p{
 
 #warning{
     color:  #ff5050;
+}
+
+#total_subheading{
+    color:blue;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: medium;
 }
